@@ -21,7 +21,6 @@
         html{scroll-behavior:smooth;overflow-x:hidden}
         body{background:var(--bg);color:var(--text);font-family:var(--font-display);overflow-x:hidden;max-width:100vw}
         body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");pointer-events:none;z-index:100;opacity:.35}
-
         nav{position:fixed;top:0;left:0;right:0;z-index:500;padding:1.5rem 3rem;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid transparent;transition:border-color .4s,backdrop-filter .4s,background .4s}
         nav.scrolled{background:rgba(5,5,5,.85);backdrop-filter:blur(20px);border-color:var(--border)}
         .nav-logo{font-family:var(--font-mono);font-size:.85rem;color:var(--accent);letter-spacing:.1em;text-transform:uppercase;text-decoration:none}
@@ -39,12 +38,10 @@
         .mobile-menu a:hover{color:var(--accent)}
         .mm-footer{position:absolute;bottom:3rem;display:flex;gap:2rem}
         .mm-footer a{font-family:var(--font-mono)!important;font-size:.75rem!important;color:var(--text-secondary)!important;letter-spacing:.1em;text-transform:uppercase;font-weight:400!important}
-
         .btn-primary{padding:.9rem 2.2rem;background:var(--accent);color:#fff;border:none;border-radius:4px;font-family:var(--font-mono);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:background .2s,transform .2s,box-shadow .2s;display:inline-block}
         .btn-primary:hover{background:#7c3aed;transform:translateY(-2px);box-shadow:0 8px 24px rgba(139,92,246,.35)}
         .btn-ghost{padding:.9rem 2.2rem;background:transparent;color:var(--text-secondary);border:1px solid var(--border);border-radius:4px;font-family:var(--font-mono);font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;transition:color .2s,border-color .2s,transform .2s;display:inline-block}
         .btn-ghost:hover{color:var(--text);border-color:var(--accent);transform:translateY(-2px)}
-
         #hero{min-height:100vh;display:flex;align-items:center;padding:120px 6vw 0;position:relative;overflow:hidden;max-width:100%}
         .hero-bg-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(139,92,246,.04) 1px,transparent 1px),linear-gradient(90deg,rgba(139,92,246,.04) 1px,transparent 1px);background-size:80px 80px;mask-image:radial-gradient(ellipse 80% 70% at 50% 50%,black,transparent)}
         .hero-glow{position:absolute;width:min(700px,80vw);height:min(700px,80vw);background:radial-gradient(circle,rgba(139,92,246,.1) 0%,transparent 70%);top:5%;right:-15%;pointer-events:none;overflow:hidden}
@@ -66,12 +63,10 @@
         .stat{text-align:right}
         .stat-num{font-size:2rem;font-weight:800;background:linear-gradient(135deg,#fff,var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;display:block}
         .stat-label{font-family:var(--font-mono);font-size:.7rem;color:var(--text-muted);letter-spacing:.1em;text-transform:uppercase}
-
         .marquee-wrap{border-top:1px solid var(--border);border-bottom:1px solid var(--border);overflow:hidden;padding:.9rem 0;background:#080808}
         .marquee-track{display:flex;animation:marquee 26s linear infinite;white-space:nowrap}
         .marquee-item{font-family:var(--font-mono);font-size:.73rem;color:var(--text-muted);letter-spacing:.12em;text-transform:uppercase;padding:0 2.5rem;display:flex;align-items:center;gap:2.5rem}
         .marquee-item::after{content:'◆';color:var(--accent);font-size:.42rem}
-
         .metrics-bar{padding:60px 6vw;background:#080808;border-bottom:1px solid var(--border)}
         .metrics-inner{max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem}
         .metric-item{text-align:center;padding:1.8rem 1rem;border:1px solid var(--border);border-radius:10px;background:var(--bg-card);position:relative;overflow:hidden;transition:border-color .3s}
@@ -80,7 +75,6 @@
         .metric-num{font-size:2.6rem;font-weight:800;background:linear-gradient(135deg,#fff,var(--accent));-webkit-background-clip:text;-webkit-text-fill-color:transparent;display:block;line-height:1.1}
         .metric-suffix{font-size:1.6rem}
         .metric-label{font-family:var(--font-mono);font-size:.68rem;color:var(--text-secondary);letter-spacing:.1em;text-transform:uppercase;margin-top:.4rem;display:block}
-
         #sobre{padding:120px 6vw;max-width:1300px;margin:0 auto}
         .about-grid{display:grid;grid-template-columns:1fr 420px;gap:5rem;align-items:center}
         .about-label{font-family:var(--font-mono);font-size:.75rem;color:var(--accent);letter-spacing:.2em;text-transform:uppercase;margin-bottom:1.5rem}
@@ -98,7 +92,6 @@
         .photo-badge{position:absolute;bottom:1.5rem;left:1.5rem;z-index:2;background:rgba(5,5,5,.85);backdrop-filter:blur(12px);border:1px solid var(--border-accent);border-radius:8px;padding:.75rem 1.2rem}
         .badge-name{font-size:1rem;font-weight:700;display:block}
         .badge-role{font-family:var(--font-mono);font-size:.68rem;color:var(--accent);letter-spacing:.08em;text-transform:uppercase}
-
         #servicos{padding:120px 6vw;background:#080808}
         .section-header{max-width:1100px;margin:0 auto 4rem;display:flex;justify-content:space-between;align-items:flex-end}
         .section-label{font-family:var(--font-mono);font-size:.75rem;color:var(--accent);letter-spacing:.2em;text-transform:uppercase;margin-bottom:.75rem}
@@ -115,7 +108,6 @@
         .svc-steps{border-top:1px solid var(--border);padding-top:1.2rem;display:flex;flex-direction:column;gap:.6rem}
         .svc-step{display:flex;align-items:flex-start;gap:.7rem;font-size:.8rem;color:var(--text-secondary)}
         .svc-step-n{font-family:var(--font-mono);font-size:.65rem;color:var(--accent);background:var(--accent-dim);border:1px solid var(--border-accent);width:20px;height:20px;border-radius:3px;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
-
         #demo{padding:100px 6vw;max-width:1300px;margin:0 auto}
         .demo-grid{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center}
         .demo-text h2{font-size:clamp(1.9rem,3.5vw,2.8rem);font-weight:700;line-height:1.15;letter-spacing:-.02em;margin-bottom:1.5rem;margin-top:1.5rem}
@@ -136,7 +128,6 @@
         .log-entry.show{opacity:1;transform:none}
         .log-ts{color:var(--text-muted);flex-shrink:0}
         .log-ok{color:#22c55e}.log-info{color:#93c5fd}.log-warn{color:#fbbf24}.log-prog{color:#c4b5fd}
-
         #dashboard-section{padding:100px 6vw;background:#080808;overflow:hidden}
         .dash-inner{max-width:1300px;margin:0 auto;overflow:hidden}
         .dash-mockup{background:var(--bg-card);border:1px solid var(--border);border-radius:16px;padding:2rem;position:relative;overflow:hidden;margin-top:3rem}
@@ -157,7 +148,6 @@
         .bar{flex:1;background:var(--accent-dim);border-radius:3px 3px 0 0;border:1px solid var(--border-accent);transition:height 1.4s cubic-bezier(.34,1.56,.64,1)}
         .bar.animated{background:linear-gradient(to top,var(--accent),rgba(139,92,246,.3))}
         .donut-wrap{display:flex;align-items:center;justify-content:center;height:80px}
-
         #projetos{padding:120px 6vw;max-width:1300px;margin:0 auto}
         .projects-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-top:4rem}
         .project-card{background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:2.5rem;position:relative;overflow:hidden;transition:border-color .3s,transform .3s;display:flex;flex-direction:column}
@@ -172,7 +162,6 @@
         .project-card p{font-size:.86rem;color:var(--text-secondary);line-height:1.7;flex:1}
         .project-link{display:inline-flex;align-items:center;gap:.5rem;font-family:var(--font-mono);font-size:.71rem;color:var(--accent);text-decoration:none;letter-spacing:.07em;text-transform:uppercase;margin-top:1.5rem;transition:gap .2s}
         .project-link:hover{gap:.8rem}
-
         #experiencia{padding:120px 6vw;background:#080808}
         .exp-wrap{max-width:1300px;margin:0 auto}
         .exp-container{display:grid;grid-template-columns:1fr 1fr;gap:5rem}
@@ -186,7 +175,6 @@
         .timeline-item h4{font-size:1rem;font-weight:700;margin-bottom:.3rem}
         .timeline-item .period{font-family:var(--font-mono);font-size:.7rem;color:var(--accent);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.55rem;display:block}
         .timeline-item p{font-size:.86rem;color:var(--text-secondary);line-height:1.65}
-
         #depoimentos{padding:120px 6vw;max-width:1300px;margin:0 auto}
         .testimonials-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:4rem}
         .testimonial-card{background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:2rem;position:relative;overflow:hidden;transition:border-color .3s,transform .3s}
@@ -198,7 +186,6 @@
         .author-avatar{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,var(--accent),#c4b5fd);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.9rem;flex-shrink:0}
         .author-name{font-weight:700;font-size:.9rem;display:block}
         .author-role{font-family:var(--font-mono);font-size:.68rem;color:var(--text-secondary);letter-spacing:.06em}
-
         #mediakit{padding:100px 6vw;background:#080808}
         .mk-inner{max-width:1100px;margin:0 auto;background:var(--bg-card);border:1px solid var(--border-accent);border-radius:20px;padding:4rem;display:grid;grid-template-columns:1fr auto;gap:4rem;align-items:center;position:relative;overflow:hidden;box-sizing:border-box;width:100%}
         .mk-inner::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),#c4b5fd,transparent)}
@@ -211,27 +198,23 @@
         .mk-pill{font-family:var(--font-mono);font-size:.68rem;color:var(--text-secondary);background:rgba(255,255,255,.04);border:1px solid var(--border);padding:.35rem .8rem;border-radius:20px;letter-spacing:.06em}
         .mk-cta{display:flex;flex-direction:column;gap:1rem;align-items:center;flex-shrink:0}
         .mk-price{font-family:var(--font-mono);font-size:.72rem;color:var(--text-secondary);letter-spacing:.08em;text-align:center}
-
         #contato{padding:120px 6vw;text-align:center;position:relative;overflow:hidden;max-width:100%}
         .contact-glow{position:absolute;width:min(800px,100vw);height:min(400px,50vw);background:radial-gradient(ellipse,rgba(139,92,246,.08) 0%,transparent 70%);top:50%;left:50%;transform:translate(-50%,-50%);pointer-events:none}
         .contact-heading{font-size:clamp(2.2rem,5.5vw,5rem);font-weight:800;letter-spacing:-.03em;line-height:1.05;margin-bottom:1.5rem}
         .contact-heading em{font-family:var(--font-serif);font-style:italic;color:var(--accent)}
         .contact-sub{font-size:1rem;color:var(--text-secondary);max-width:460px;margin:0 auto 3rem;line-height:1.7}
         .contact-links{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
-
         footer{border-top:1px solid var(--border);padding:2rem 6vw;display:flex;justify-content:space-between;align-items:center}
         .footer-copy{font-family:var(--font-mono);font-size:.7rem;color:var(--text-muted);letter-spacing:.08em}
         .footer-links{display:flex;gap:2rem}
         .footer-links a{font-family:var(--font-mono);font-size:.7rem;color:var(--text-muted);text-decoration:none;letter-spacing:.08em;text-transform:uppercase;transition:color .2s}
         .footer-links a:hover{color:var(--accent)}
-
         @keyframes fadeUp{to{opacity:1;transform:translateY(0)}}
         @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
         .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
         .reveal.visible{opacity:1;transform:translateY(0)}
         .reveal-delay-1{transition-delay:.1s}.reveal-delay-2{transition-delay:.2s}
         .reveal-delay-3{transition-delay:.3s}.reveal-delay-4{transition-delay:.4s}
-
         @media(max-width:1100px){.about-grid{grid-template-columns:1fr 360px}.about-photo-wrap{width:360px}.photo-frame{height:460px}}
         @media(max-width:1024px){.services-grid-cards{grid-template-columns:repeat(2,1fr)}.testimonials-grid{grid-template-columns:1fr 1fr}.dash-kpi-row{grid-template-columns:repeat(2,1fr)}.chart-area{grid-template-columns:1fr}.mk-inner{grid-template-columns:1fr;gap:2.5rem}.mk-cta{flex-direction:row;align-items:center}}
         @media(max-width:768px){
@@ -258,7 +241,6 @@
     </style>
 </head>
 <body>
-
 <div class="mobile-menu" id="mobileMenu">
     <a href="#sobre">Sobre</a>
     <a href="#servicos">Servicos</a>
@@ -271,7 +253,6 @@
         <a href="https://www.linkedin.com/in/gustavo-henriquesp/" target="_blank">LinkedIn</a>
     </div>
 </div>
-
 <nav id="navbar">
     <a href="#hero" class="nav-logo">Gustavo.dev</a>
     <ul class="nav-links">
@@ -286,7 +267,6 @@
         <span></span><span></span><span></span>
     </button>
 </nav>
-
 <section id="hero">
     <div class="hero-bg-grid"></div>
     <div class="hero-glow"></div>
@@ -313,12 +293,11 @@
         </div>
     </div>
     <div class="hero-stats">
-        <div class="stat"><span class="stat-num" data-target="9">0</span><span class="stat-label">Projetos entregues</span></div>
+        <div class="stat"><span class="stat-num" data-target="10">0</span><span class="stat-label">Projetos entregues</span></div>
         <div class="stat"><span class="stat-num" data-target="100">0</span><span class="stat-label">% erros eliminados</span></div>
         <div class="stat"><span class="stat-num">inf</span><span class="stat-label">Linhas de codigo</span></div>
     </div>
 </section>
-
 <div class="marquee-wrap">
     <div class="marquee-track">
         <div class="marquee-item">Python</div><div class="marquee-item">SQL</div>
@@ -333,16 +312,14 @@
         <div class="marquee-item">VBA Excel</div><div class="marquee-item">Inside.co</div>
     </div>
 </div>
-
 <div class="metrics-bar">
     <div class="metrics-inner">
         <div class="metric-item reveal"><span class="metric-num"><span class="count-up" data-target="12847">0</span></span><span class="metric-label">Registros processados / dia</span></div>
         <div class="metric-item reveal reveal-delay-1"><span class="metric-num"><span class="count-up" data-target="100">0</span><span class="metric-suffix">%</span></span><span class="metric-label">Precisao na auditoria</span></div>
-        <div class="metric-item reveal reveal-delay-2"><span class="metric-num"><span class="count-up" data-target="9">0</span><span class="metric-suffix">+</span></span><span class="metric-label">Projetos em producao</span></div>
+        <div class="metric-item reveal reveal-delay-2"><span class="metric-num"><span class="count-up" data-target="10">0</span><span class="metric-suffix">+</span></span><span class="metric-label">Projetos em producao</span></div>
         <div class="metric-item reveal reveal-delay-3"><span class="metric-num">4h<span class="metric-suffix" style="font-size:1.2rem">-5min</span></span><span class="metric-label">Reducao no tempo de auditoria</span></div>
     </div>
 </div>
-
 <section id="sobre">
     <div class="about-grid">
         <div class="reveal">
@@ -370,7 +347,6 @@
         </div>
     </div>
 </section>
-
 <section id="servicos">
     <div class="section-header reveal"><div><div class="section-label">// O que entrego</div><h2 class="section-heading">Solucoes<br>Tecnologicas</h2></div><div class="section-count">06</div></div>
     <div class="services-grid-cards">
@@ -382,7 +358,6 @@
         <div class="svc-card reveal reveal-delay-1"><span class="svc-icon">&#128202;</span><h3>Business Intelligence</h3><p>Dashboards, pipelines ETL e reconciliacao financeira que transformam dados brutos em decisoes estrategicas.</p><div class="svc-steps"><div class="svc-step"><div class="svc-step-n">1</div><span>Levantamento das fontes de dados</span></div><div class="svc-step"><div class="svc-step-n">2</div><span>Construcao do pipeline ETL</span></div><div class="svc-step"><div class="svc-step-n">3</div><span>Dashboard e relatorios automaticos</span></div></div></div>
     </div>
 </section>
-
 <section id="demo">
     <div class="demo-grid">
         <div class="demo-text reveal">
@@ -407,7 +382,6 @@
         </div>
     </div>
 </section>
-
 <section id="dashboard-section">
     <div class="dash-inner">
         <div class="section-header reveal"><div><div class="section-label">// Business Intelligence</div><h2 class="section-heading">Dados que<br>viram decisao.</h2></div><div class="section-count">BI</div></div>
@@ -426,22 +400,21 @@
         </div>
     </div>
 </section>
-
 <section id="projetos">
-    <div class="section-header reveal"><div><div class="section-label">// Portfolio</div><h2 class="section-heading">Projetos<br>entregues.</h2></div><div class="section-count">09</div></div>
+    <div class="section-header reveal"><div><div class="section-label">// Portfolio</div><h2 class="section-heading">Projetos<br>entregues.</h2></div><div class="section-count">10</div></div>
     <div class="projects-grid">
         <div class="project-card reveal"><div class="project-tags"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Finance</span></div><span class="project-status">&#9679; Concluido</span><h3>Motor de Auditoria Financeira</h3><p>Conciliacao de faturamentos e deteccao de Deltas em arquivos posicionais. Processa 12.847 registros em 4 minutos — antes levava 4 horas de revisao manual.</p><a href="https://github.com/guhspm" target="_blank" class="project-link">Ver no GitHub</a></div>
         <div class="project-card reveal reveal-delay-1"><div class="project-tags"><span class="tag">Python</span><span class="tag">Regex</span><span class="tag">PDF</span></div><span class="project-status">&#9679; Concluido</span><h3>RPA de Faturamento — Planos de Saude</h3><p>Extracao automatica de ISS, IRRF e valores brutos de PDFs nao estruturados. Centenas de notas por hora com 100% de rastreabilidade.</p><a href="https://github.com/guhspm" target="_blank" class="project-link">Ver no GitHub</a></div>
         <div class="project-card reveal reveal-delay-2"><div class="project-tags"><span class="tag">Python</span><span class="tag">ETL</span><span class="tag">FIFO</span></div><span class="project-status">&#9679; Concluido</span><h3>Pipeline ETL FIFO — Passivos Financeiros</h3><p>Abatimento progressivo FIFO de passivos com integridade total. Do dado bruto ao relatorio auditavel em producao.</p><a href="https://github.com/guhspm" target="_blank" class="project-link">Ver no GitHub</a></div>
         <div class="project-card reveal reveal-delay-3"><div class="project-tags"><span class="tag">Python</span><span class="tag">OpenPyXL</span><span class="tag">VBA</span></div><span class="project-status">&#9679; Concluido</span><h3>Automacao de Relatorios Corporativos</h3><p>Processa dados de inadimplencia e pagamentos, cruza com relatorios externos e gera 3 tipos de relatorios gerenciais com estilizacao executiva automatica.</p><a href="https://github.com/guhspm" target="_blank" class="project-link">Ver no GitHub</a></div>
         <div class="project-card reveal"><div class="project-tags"><span class="tag">WordPress</span><span class="tag">Elementor</span><span class="tag">HTML/CSS/JS</span></div><span class="project-status">&#9679; Concluido</span><h3>Site de Afiliados Fitness — Exercite-se em Casa</h3><p>Vitrine de afiliados com 51 produtos do Mercado Livre, carrossel animado, filtro por categoria, ticker, hero responsivo e rodape completo. Desenvolvido em HTML/CSS/JS puro e integrado ao WordPress via Elementor com zero dependencias externas.</p><a href="https://exerciteseemcasa2026.com" target="_blank" class="project-link">Ver site ao vivo →</a></div>
-        <div class="project-card reveal reveal-delay-1"><div class="project-tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">OFX</span></div><span class="project-status status-dev">Em desenvolvimento</span><h3>Robo de Conciliacao Bancaria</h3><p>Reconciliacao automatica entre extratos OFX e registros internos em SQL. Detecta duplicatas, divergencias e transacoes nao conciliadas com relatorio PDF ao final de cada ciclo.</p><a href="https://github.com/guhspm" target="_blank" class="project-link">Ver no GitHub</a></div>
-        <div class="project-card reveal reveal-delay-2"><div class="project-tags"><span class="tag">Python</span><span class="tag">API</span><span class="tag">Dashboard</span></div><span class="project-status status-dev">Em desenvolvimento</span><h3>Dashboard de KPIs — Inside.co</h3><p>Metricas consolidadas de multiplas plataformas: alcance, engajamento e ROI. Atualizado automaticamente via APIs, zero intervencao manual.</p><a href="https://github.com/guhspm" target="_blank" class="project-link">Ver no GitHub</a></div>
-        <div class="project-card reveal reveal-delay-3"><div class="project-tags"><span class="tag">Python</span><span class="tag">Regex</span><span class="tag">NLP</span></div><span class="project-status status-dev">Em desenvolvimento</span><h3>Parser de Contratos — Extracao NLP</h3><p>Extrai clausulas, prazos e valores de contratos PDF em menos de 30 segundos. Output em JSON, reduzindo analise de 2h para segundos.</p><a href="https://github.com/guhspm" target="_blank" class="project-link">Ver no GitHub</a></div>
-        <div class="project-card reveal"><div class="project-tags"><span class="tag">Python</span><span class="tag">Telegram</span><span class="tag">Scheduler</span></div><span class="project-status status-dev">Em desenvolvimento</span><h3>Sistema de Alertas Financeiros</h3><p>Monitoramento de indicadores com disparo de alertas via Telegram quando metricas saem da faixa segura. Schedule diario, zero intervencao manual.</p><a href="https://github.com/guhspm" target="_blank" class="project-link">Ver no GitHub</a></div>
+        <div class="project-card reveal reveal-delay-1"><div class="project-tags"><span class="tag">HTML/CSS/JS</span><span class="tag">Landing Page</span><span class="tag">Hotmart</span></div><span class="project-status">&#9679; Concluido</span><h3>Landing Page — Algoritmo da Personalidade</h3><p>Landing page de alta conversao para o infoproduto do Psicologo Ruan Indrigo. Dark mode com acento dourado, animacoes de scroll, depoimentos em video, carrossel de avaliacoes, tabela de preco ancorada e Google Tag Manager para rastreamento de trafego pago.</p><a href="https://algoritmodapersonalidade.com.br" target="_blank" class="project-link">Ver site ao vivo →</a></div>
+        <div class="project-card reveal reveal-delay-2"><div class="project-tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">OFX</span></div><span class="project-status status-dev">Em desenvolvimento</span><h3>Robo de Conciliacao Bancaria</h3><p>Reconciliacao automatica entre extratos OFX e registros internos em SQL. Detecta duplicatas, divergencias e transacoes nao conciliadas com relatorio PDF ao final de cada ciclo.</p><a href="https://github.com/guhspm" target="_blank" class="project-link">Ver no GitHub</a></div>
+        <div class="project-card reveal reveal-delay-3"><div class="project-tags"><span class="tag">Python</span><span class="tag">API</span><span class="tag">Dashboard</span></div><span class="project-status status-dev">Em desenvolvimento</span><h3>Dashboard de KPIs — Inside.co</h3><p>Metricas consolidadas de multiplas plataformas: alcance, engajamento e ROI. Atualizado automaticamente via APIs, zero intervencao manual.</p><a href="https://github.com/guhspm" target="_blank" class="project-link">Ver no GitHub</a></div>
+        <div class="project-card reveal"><div class="project-tags"><span class="tag">Python</span><span class="tag">Regex</span><span class="tag">NLP</span></div><span class="project-status status-dev">Em desenvolvimento</span><h3>Parser de Contratos — Extracao NLP</h3><p>Extrai clausulas, prazos e valores de contratos PDF em menos de 30 segundos. Output em JSON, reduzindo analise de 2h para segundos.</p><a href="https://github.com/guhspm" target="_blank" class="project-link">Ver no GitHub</a></div>
+        <div class="project-card reveal reveal-delay-1"><div class="project-tags"><span class="tag">Python</span><span class="tag">Telegram</span><span class="tag">Scheduler</span></div><span class="project-status status-dev">Em desenvolvimento</span><h3>Sistema de Alertas Financeiros</h3><p>Monitoramento de indicadores com disparo de alertas via Telegram quando metricas saem da faixa segura. Schedule diario, zero intervencao manual.</p><a href="https://github.com/guhspm" target="_blank" class="project-link">Ver no GitHub</a></div>
     </div>
 </section>
-
 <section id="experiencia">
     <div class="exp-wrap">
         <div class="section-header reveal"><div><div class="section-label">// Trajetoria</div><h2 class="section-heading">Experiencia<br>e Formacao</h2></div><div class="section-count">&#8593;</div></div>
@@ -465,7 +438,6 @@
         </div>
     </div>
 </section>
-
 <section id="depoimentos">
     <div class="section-header reveal"><div><div class="section-label">// Social proof</div><h2 class="section-heading">O que dizem<br>os clientes.</h2></div><div class="section-count">&#9733;</div></div>
     <div class="testimonials-grid">
@@ -474,7 +446,6 @@
         <div class="testimonial-card reveal reveal-delay-2"><div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="testimonial-text">A integracao entre os nossos sistemas era um pesadelo. O Gustavo resolveu em dias algo que estava travado ha meses. Profissional raro que une tecnica e comunicacao.</p><div class="testimonial-author"><div class="author-avatar">LP</div><div><span class="author-name">Lucas P.</span><span class="author-role">CTO · Startup Fintech</span></div></div></div>
     </div>
 </section>
-
 <section id="mediakit">
     <div class="mk-inner reveal">
         <div>
@@ -489,7 +460,6 @@
         </div>
     </div>
 </section>
-
 <section id="contato">
     <div class="contact-glow"></div>
     <div class="section-label reveal" style="margin-bottom:1.5rem">// Proximo passo</div>
@@ -501,7 +471,6 @@
         <a href="https://www.linkedin.com/in/gustavo-henriquesp/" target="_blank" class="btn-ghost">LinkedIn</a>
     </div>
 </section>
-
 <footer>
     <div class="footer-copy">2026 Gustavo · Inside.co</div>
     <div class="footer-links">
@@ -510,28 +479,23 @@
         <a href="https://wa.me/5538999643194" target="_blank">WhatsApp</a>
     </div>
 </footer>
-
 <script>
 window.addEventListener('scroll',function(){document.getElementById('navbar').classList.toggle('scrolled',window.scrollY>50);});
-
 var hb=document.getElementById('hamburger'),mm=document.getElementById('mobileMenu'),mOpen=false;
 function toggleMenu(f){mOpen=f!==undefined?f:!mOpen;hb.classList.toggle('open',mOpen);mm.classList.toggle('open',mOpen);document.body.style.overflow=mOpen?'hidden':'';}
 hb.addEventListener('click',function(){toggleMenu();});
 mm.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){toggleMenu(false);});});
 document.addEventListener('keydown',function(e){if(e.key==='Escape'&&mOpen)toggleMenu(false);});
-
 var cmds=['python rpa_faturamento.py','auditoria.run(batch=marco_2026)','python etl_fifo.py --verbose','processar_notas --input ./pdfs/'];
 var ci=0,ci2=0,del=false,typed=document.getElementById('termTyped');
 function typeLoop(){var cmd=cmds[ci];if(!del){if(ci2<cmd.length){typed.textContent=cmd.slice(0,++ci2);setTimeout(typeLoop,60);}else{setTimeout(function(){del=true;typeLoop();},2200);}}else{if(ci2>0){typed.textContent=cmd.slice(0,--ci2);setTimeout(typeLoop,28);}else{del=false;ci=(ci+1)%cmds.length;setTimeout(typeLoop,400);}}}
 setTimeout(typeLoop,1400);
-
 setTimeout(function(){
     document.querySelectorAll('.hero-stats .stat-num[data-target]').forEach(function(el){
         var t=+el.dataset.target,s=performance.now();
         (function step(n){var p=Math.min((n-s)/1600,1),e=1-Math.pow(1-p,3);el.textContent=Math.floor(e*t);if(p<1)requestAnimationFrame(step);else el.textContent=t;})(performance.now());
     });
 },1200);
-
 var logs=[
     {cls:'log-info',ts:'10:32:01',msg:'Iniciando rpa_faturamento.py...'},
     {cls:'log-ok',ts:'10:32:01',msg:'Pasta ./pdfs/ — 247 arquivos encontrados'},
@@ -557,7 +521,6 @@ function startLog(){
 }
 var logObs=new IntersectionObserver(function(e){if(e[0].isIntersecting)startLog();},{threshold:.3});
 var demoSec=document.getElementById('demo');if(demoSec)logObs.observe(demoSec);
-
 var revObs=new IntersectionObserver(function(entries){
     entries.forEach(function(e){
         if(e.isIntersecting){e.target.classList.add('visible');revObs.unobserve(e.target);e.target.querySelectorAll('.count-up').forEach(function(el){animCount(el);});}
@@ -565,19 +528,15 @@ var revObs=new IntersectionObserver(function(entries){
 },{threshold:0,rootMargin:'0px 0px -30px 0px'});
 document.querySelectorAll('.reveal').forEach(function(el){revObs.observe(el);});
 setTimeout(function(){document.querySelectorAll('.reveal:not(.visible)').forEach(function(el){var r=el.getBoundingClientRect();if(r.top<window.innerHeight)el.classList.add('visible');});},200);
-
 function animCount(el){var t=+el.dataset.target,s=performance.now(),dur=1800;(function step(n){var p=Math.min((n-s)/dur,1),ease=1-Math.pow(1-p,4);el.textContent=Math.floor(ease*t).toLocaleString('pt-BR');if(p<1)requestAnimationFrame(step);else el.textContent=t.toLocaleString('pt-BR');})(performance.now());}
-
 var barsOk=false;
 function animBars(){if(barsOk)return;barsOk=true;document.querySelectorAll('#barChart .bar').forEach(function(b,i){setTimeout(function(){b.style.height=b.dataset.h;b.classList.add('animated');},i*100);});}
 function animDonut(){var c=document.getElementById('donutCircle');if(c){c.style.strokeDashoffset=2*Math.PI*30*(1-0.964);}}
 var dashObs=new IntersectionObserver(function(e){if(e[0].isIntersecting){animBars();animDonut();}},{threshold:.2});
 var dashSec=document.getElementById('dashboard-section');if(dashSec)dashObs.observe(dashSec);
-
 document.querySelectorAll('.project-card').forEach(function(card){
     card.addEventListener('mousemove',function(e){var r=card.getBoundingClientRect();card.style.setProperty('--mx',((e.clientX-r.left)/r.width*100)+'%');card.style.setProperty('--my',((e.clientY-r.top)/r.height*100)+'%');});
 });
-
 var photo=document.getElementById('profilePhoto');
 if(photo)photo.onerror=function(){photo.style.display='none';photo.parentElement.style.background='linear-gradient(135deg,#111,#1a0a2e)';};
 </script>
